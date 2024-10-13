@@ -11,7 +11,7 @@ void draw() {
   background(0);
   tileNum = int(map(mouseX, 0, width, 3, 16 + 1));
   float tileSize = width / float(tileNum);
-  for(int row = 0; col < tileNum; row++) {
+  for(int row = 0; row < tileNum; row++) {
     for(int col = 0; col < tileNum; col++) {
    float rectX =tileSize * col;
    rect(rectX, 10, tileSize, tileSize);
